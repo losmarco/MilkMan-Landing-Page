@@ -1,0 +1,25 @@
+{
+  "name": "MilkMan-Landing-Page",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "postcss css/tailwind.css -o dist/build/tailwind.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/losmarco/MilkMan-Landing-Page.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/losmarco/MilkMan-Landing-Page/issues"
+  },
+  "homepage": "https://github.com/losmarco/MilkMan-Landing-Page#readme",
+  "dependencies": {
+    "autoprefixer": "^9.8.6",
+    "postcss-cli": "^7.1.1",
+    "tailwindcss": "^1.6.2"
+  }
+}
