@@ -18,6 +18,7 @@
   },
   "homepage": "https://github.com/losmarco/MilkMan-Landing-Page#readme",
   "dependencies": {
+    "@fullhuman/postcss-purgecss": "^2.3.0",
     "@tailwindcss/ui": "^0.5.0",
     "autoprefixer": "^9.8.6",
     "postcss-cli": "^7.1.1",

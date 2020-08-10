@@ -14,7 +14,7 @@ module.exports = {
     zIndex: {
       '-10': '-10',
     }
-  },
+  }, 
   variants: {},
   plugins: [
     require('@tailwindcss/ui'),
