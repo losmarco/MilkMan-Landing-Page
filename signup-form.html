@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="bg-red-400 h-screen w-screen">
+        <div class="flex flex-col items-center flex-1 h-full justify-center px-4 sm:px-0">
+            <div class="flex rounded-lg shadow-lg w-full sm:w-5/6 lg:w-5/6 xl:w-1/2 max-w-screen-xl bg-white sm:mx-0" style="height: 500px">
+                <div class="hidden sm:flex sm:w-1/2 rounded-l-lg  flex-col justify-around" style="background: #ffe7e6;">
+                    <div>
+                        <a href="#" class="p-2 inline-flex ">
+                            <span class="text-xl text-black font-bold uppercase tracking-wide">MilkMan</span>
+                        </a>
+                    </div>
+                    <div>
+                        <img class="p-4" src="img/login.svg">
+                    </div>
+                </div>
+                <div class="flex flex-col w-full sm:w-1/2 p-4">
+                    <div class="flex flex-col flex-1 justify-center mb-8">
+                        <h1 class="text-4xl text-center font-thin">Sign Up</h1>
+                        <div class="flex items-center justify-center mt-2">
+                            <p class="font-light text-gray-800">Already a user? <a href="login-form.html" class="text-red-500">Login</a></p>
+                        </div>
+                        <div class="w-full mt-2">
+                            <form class="form-horizontal w-3/4 mx-auto" method="POST" action="#">
+                                <div class="flex flex-col mt-4">
+                                    <input id="email" type="text" class="flex-grow h-8 px-2 border rounded border-grey-400" name="email" value="" required placeholder="Email">
+                                    <small>Error Message</small>
+                                </div>
+                                <div class="flex flex-col mt-4">
+                                    <input id="password" type="password" class="flex-grow h-8 px-2 rounded border border-grey-400" name="password" required placeholder="Password">
+                                    <small>Error Message</small>
+                                </div>
+                            
+                                <div class="flex items-center mt-4">
+                                    <input type="checkbox" name="remember" id="remember" class="mr-2"> <label for="remember" class="text-sm text-grey-dark">Remember Me</label>
+                                </div>
+                                
+                                <div class="flex flex-col mt-8">
+                                    <button type="submit" class="bg-red-400 hover:bg-red-700 text-white text-sm font-semibold py-2 px-4 rounded">
+                                        Sign Up
+                                    </button>
+                                </div>
+                            </form>
+                            <div class="text-center mt-4">
+                                <a class="no-underline hover:underline text-blue-dark text-xs" href="{{ route('password.request') }}">
+                                    Forgot Your Password?
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+</body>
+</html>
