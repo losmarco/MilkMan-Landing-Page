@@ -944,6 +944,9 @@ img {
 }
 
 @-webkit-keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
 
   to {
     transform: rotate(360deg);
@@ -996,12 +999,20 @@ img {
   }
 }
 
+.success {
+  border-color: green;
+}
+
 .error {
   border-color: red;
 }
 
 small{
   visibility: hidden;
+}
+
+.errorMessage {
+  visibility: visible;
 }
 
 .pink-gradient{

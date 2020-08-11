@@ -5,7 +5,7 @@ module.exports ={
         require('autoprefixer'),
         require('@fullhuman/postcss-purgecss')({
             content:[
-                './dist/**/*.html'
+                './dist/**/*.html', './dist/**/*.js'
             ],
             defaultExtractor: content =>content.match(/[\w-/:]+(?<!:)/g) || [],
         })
