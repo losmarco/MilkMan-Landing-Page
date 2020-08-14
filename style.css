@@ -46,12 +46,6 @@ h1 {
  * 2. Show the overflow in Edge and IE.
  */
 
-hr {
-  box-sizing: content-box; /* 1 */
-  height: 0; /* 1 */
-  overflow: visible; /* 2 */
-}
-
 /**
  * 1. Correct the inheritance and scaling of font size in all browsers.
  * 2. Correct the odd `em` font sizing in all browsers.
@@ -261,7 +255,6 @@ details {
 
 
 h1,
-hr,
 p {
   margin: 0;
 }
@@ -335,10 +328,6 @@ html {
 /*
  * Ensure horizontal rules are visible by default
  */
-
-hr {
-  border-top-width: 1px;
-}
 
 /**
  * Undo the `border-style: none` reset that Normalize applies to images so that
@@ -672,6 +661,10 @@ img {
   line-height: 1.625;
 }
 
+.-m-4 {
+  margin: -1rem;
+}
+
 .my-2 {
   margin-top: 0.5rem;
   margin-bottom: 0.5rem;
@@ -831,6 +824,10 @@ img {
   box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
 }
 
+.hover\:shadow-xl:hover {
+  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+}
+
 .text-center {
   text-align: center;
 }
@@ -889,10 +886,16 @@ img {
   color: rgba(4, 116, 129, var(--text-opacity));
 }
 
-.hover\:text-gray-900:hover {
+.text-blue-400 {
   --text-opacity: 1;
-  color: #161e2e;
-  color: rgba(22, 30, 46, var(--text-opacity));
+  color: #76a9fa;
+  color: rgba(118, 169, 250, var(--text-opacity));
+}
+
+.hover\:text-blue-600:hover {
+  --text-opacity: 1;
+  color: #1c64f2;
+  color: rgba(28, 100, 242, var(--text-opacity));
 }
 
 .italic {
@@ -941,6 +944,14 @@ img {
 
 .w-screen {
   width: 100vw;
+}
+
+.transition-shadow {
+  transition-property: box-shadow;
+}
+
+.duration-300 {
+  transition-duration: 300ms;
 }
 
 @-webkit-keyframes spin {
@@ -1047,6 +1058,10 @@ small{
 
   .sm\:flex {
     display: flex;
+  }
+
+  .sm\:hidden {
+    display: none;
   }
 
   .sm\:flex-row {
